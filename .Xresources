@@ -1,0 +1,146 @@
+
+!-------------------------------------------------------------------------------
+! Xft settings
+!-------------------------------------------------------------------------------
+
+Xft.dpi:                    96
+Xft.antialias:              true
+Xft.rgba:                   rgb
+Xft.hinting:                true
+Xft.hintstyle:              hintslight
+
+!-------------------------------------------------------------------------------
+! URxvt settings
+! Colours lifted from Solarized (http://ethanschoonover.com/solarized)
+! More info at:
+! http://pod.tst.eu/http://cvs.schmorp.de/rxvt-unicode/doc/rxvt.1.pod
+!-------------------------------------------------------------------------------
+
+URxvt.depth:                32
+URxvt.geometry:             90x30
+URxvt.transparent:          0
+URxvt.fading:               40
+! URxvt.urgentOnBell:         true
+! URxvt.visualBell:           true
+URxvt.loginShell:           true
+URxvt.saveLines:            1000
+URxvt.internalBorder:       4
+URxvt.lineSpace:            0
+
+! Fonts
+! URxvt.allow_bold:           false
+! URxvt.font:                 -*-terminus-medium-r-normal-*-16-*-*-*-*-*-*-*
+! URxvt.boldFont:                 -*-terminus-bold-r-normal-*-16-*-*-*-*-*-*-*
+URxvt.font:                   xft:Lekton:size=9
+URxvt.boldFont:               xft:Lekton:size=9:style=bold
+! URxvt*font: xft:Hack:pixelsize=12 \ DejaVu Sans Mono:pixelsize=12 \ xft:Inconsolata:pixelsize=12
+!URxvt.font: xft:Source Code Pro:size=7
+! URxvt*boldFont: xft:DejaVu Sans Mono:pixelsize=12
+! URxvt*font: xft:InconsolataForPowerline Nerd Font:pixelsize=13,antialias=false:hinting=true
+!URxvt.boldFont: xft:Source Code Pro:size=7
+!	
+! Tamzen
+! URxvt.font: -misc-tamzen-medium-r-normal--17-*-*-*-*-*-iso8859-1
+! URxvt.boldFont: -misc-tamzen-bold-r-normal--17-*-*-*-*-*-iso8859-1
+! Fix font space
+!URxvt*letterSpace: 0
+
+! Scrollbar
+URxvt.scrollStyle:          rxvt
+URxvt.scrollBar:            false
+
+
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+
+
+URxvt.secondaryScreen: 1
+URxvt.secondaryScroll: 0
+
+! colorful man pages:
+URxvt.colorIT:      #87af5f
+URxvt.colorBD:      #d7d7d7
+URxvt.colorUL:      #87afd7
+
+
+! Perl extensions
+URxvt.perl-ext-common:      default,matcher,resize-font,clipboard
+URxvt.matcher.button:       1
+URxvt.url-Launcher:          firefox
+
+! Copy/Paste from Clipboard (secondary selection)
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+
+! Disable Unicode Input Mode
+URxvt.iso14755: true
+URxvt.iso14755_52: false
+
+! Cursor
+URxvt.cursorBlink:          true
+URxvt.cursorColor:          #657b83
+URxvt.cursorUnderline:      false
+
+! Pointer
+URxvt.pointerBlank:         true
+
+! special
+ *.foreground:   #d7d0c7
+ *.background:   #151515
+ *.cursorColor:  #d7d0c7
+!
+! ! black
+ *.color0:       #101010
+ *.color8:       #404040
+!
+! ! red
+ *.color1:       #e84f4f
+ *.color9:       #d23d3d
+!
+! ! green
+ *.color2:       #b8d68c
+ *.color10:      #a0cf5d
+!
+! ! yellow
+ *.color3:       #e1aa5d
+ *.color11:      #f39d21
+!
+! ! blue
+ *.color4:       #7dc1cf
+ *.color12:      #4e9fb1
+!
+! ! magenta
+ *.color5:       #9b64fb
+ *.color13:      #8542ff
+!
+! ! cyan
+ *.color6:       #6d878d
+ *.color14:      #42717b
+!
+! ! white
+ *.color7:       #dddddd
+ *.color15:      #dddddd
+
+
+! ------------------------------------------------------------------------------
+! ! ROFI Color theme
+! ! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: #151515, #101010, #dddddd
+rofi.color-normal: #101010, #dddddd, #101010, #5dc0e0, #dddddd
+rofi.color-active: #101010, #7dc1cf, #eee8d5, #7dc1cf, #fdf6e3
+rofi.color-urgent: #101010, #e84f4f, #dddddd, #e84f4f, #ddddd
+
+rofi.lines: 10
+! rofi.width: 100
+! rofi.height: 900
+rofi.padding: 200
+rofi.fullscreen: true
+rofi.font: Hack 12
+rofi.opacity: 80
