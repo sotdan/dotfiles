@@ -6,6 +6,9 @@ alias vim='vim --servername vim'
 alias rn='sudo systemctl restart network-manager.service'
 alias xr='xrdb -merge ~/.Xresources'
 alias c='nmcli --ask c'
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
 
 
 # Aliases for Tamzen fonts
